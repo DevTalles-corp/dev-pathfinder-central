@@ -4,6 +4,10 @@ import reactCourse from "@/assets/react-course.jpg";
 import angularCourse from "@/assets/angular-course.jpg";
 import nodejsCourse from "@/assets/nodejs-course.jpg";
 import djangoCourse from "@/assets/django-course.jpg";
+import pythonCourse from "@/assets/python-course.jpg";
+import javaCourse from "@/assets/java-course.jpg";
+import dockerCourse from "@/assets/docker-course.jpg";
+import mobileCourse from "@/assets/mobile-course.jpg";
 
 const courseCategories = [
   "All", "Frontend", "Backend", "Full Stack", "Mobile", "DevOps", "Data Science"
@@ -112,7 +116,7 @@ const mockCourses = [
     id: "8",
     title: "Java Spring Boot Microservices",
     instructor: "Maria Garcia",
-    thumbnail: djangoCourse,
+    thumbnail: javaCourse,
     price: 119,
     originalPrice: 249,
     rating: 4.8,
@@ -121,6 +125,202 @@ const mockCourses = [
     studentsCount: 56789,
     level: "Advanced" as const,
     category: "Backend"
+  },
+  {
+    id: "9",
+    title: "Python for Data Science & Machine Learning",
+    instructor: "Dr. Amanda Foster",
+    thumbnail: pythonCourse,
+    price: 109,
+    originalPrice: 229,
+    rating: 4.9,
+    ratingCount: 18765,
+    duration: "38h",
+    studentsCount: 89432,
+    level: "Intermediate" as const,
+    category: "Data Science"
+  },
+  {
+    id: "10",
+    title: "Docker & Kubernetes DevOps Bootcamp",
+    instructor: "Marcus Williams",
+    thumbnail: dockerCourse,
+    price: 129,
+    originalPrice: 279,
+    rating: 4.8,
+    ratingCount: 7845,
+    duration: "45h",
+    studentsCount: 23456,
+    level: "Advanced" as const,
+    category: "DevOps"
+  },
+  {
+    id: "11",
+    title: "React Native Mobile App Development",
+    instructor: "Jessica Martinez",
+    thumbnail: mobileCourse,
+    price: 95,
+    originalPrice: 199,
+    rating: 4.7,
+    ratingCount: 12876,
+    duration: "30h",
+    studentsCount: 45123,
+    level: "Intermediate" as const,
+    category: "Mobile"
+  },
+  {
+    id: "12",
+    title: "Full Stack Web Development with MERN",
+    instructor: "Jason Taylor",
+    thumbnail: reactCourse,
+    price: 149,
+    originalPrice: 299,
+    rating: 4.9,
+    ratingCount: 9654,
+    duration: "55h",
+    studentsCount: 34567,
+    level: "Advanced" as const,
+    category: "Full Stack"
+  },
+  {
+    id: "13",
+    title: "GraphQL with Apollo Server & Client",
+    instructor: "Nina Patel",
+    thumbnail: nodejsCourse,
+    price: 89,
+    originalPrice: 179,
+    rating: 4.6,
+    ratingCount: 5432,
+    duration: "22h",
+    studentsCount: 16789,
+    level: "Intermediate" as const,
+    category: "Backend"
+  },
+  {
+    id: "14",
+    title: "AWS Cloud Architecture Masterclass",
+    instructor: "Chris Anderson",
+    thumbnail: dockerCourse,
+    price: 139,
+    originalPrice: 289,
+    rating: 4.8,
+    ratingCount: 8901,
+    duration: "48h",
+    studentsCount: 27654,
+    level: "Advanced" as const,
+    category: "DevOps"
+  },
+  {
+    id: "15",
+    title: "Modern JavaScript ES6+ Complete Guide",
+    instructor: "Rachel Green",
+    thumbnail: reactCourse,
+    price: 59,
+    originalPrice: 129,
+    rating: 4.7,
+    ratingCount: 21456,
+    duration: "25h",
+    studentsCount: 78901,
+    level: "Beginner" as const,
+    category: "Frontend"
+  },
+  {
+    id: "16",
+    title: "MongoDB Database Administration",
+    instructor: "Ahmed Hassan",
+    thumbnail: nodejsCourse,
+    price: 79,
+    originalPrice: 169,
+    rating: 4.5,
+    ratingCount: 6789,
+    duration: "20h",
+    studentsCount: 19876,
+    level: "Intermediate" as const,
+    category: "Backend"
+  },
+  {
+    id: "17",
+    title: "Flutter Mobile Development Bootcamp",
+    instructor: "Sophie Lee",
+    thumbnail: mobileCourse,
+    price: 99,
+    originalPrice: 209,
+    rating: 4.8,
+    ratingCount: 10987,
+    duration: "35h",
+    studentsCount: 32145,
+    level: "Intermediate" as const,
+    category: "Mobile"
+  },
+  {
+    id: "18",
+    title: "PHP Laravel Framework Mastery",
+    instructor: "Roberto Silva",
+    thumbnail: djangoCourse,
+    price: 75,
+    originalPrice: 155,
+    rating: 4.6,
+    ratingCount: 8765,
+    duration: "28h",
+    studentsCount: 25431,
+    level: "Intermediate" as const,
+    category: "Backend"
+  },
+  {
+    id: "19",
+    title: "C# .NET Core Web API Development",
+    instructor: "Anna Kowalski",
+    thumbnail: javaCourse,
+    price: 105,
+    originalPrice: 219,
+    rating: 4.7,
+    ratingCount: 7234,
+    duration: "40h",
+    studentsCount: 18769,
+    level: "Advanced" as const,
+    category: "Backend"
+  },
+  {
+    id: "20",
+    title: "PostgreSQL Database Design & Optimization",
+    instructor: "Samuel Davis",
+    thumbnail: pythonCourse,
+    price: 69,
+    originalPrice: 149,
+    rating: 4.5,
+    ratingCount: 5643,
+    duration: "18h",
+    studentsCount: 14532,
+    level: "Intermediate" as const,
+    category: "Backend"
+  },
+  {
+    id: "21",
+    title: "Redis Caching & Performance Optimization",
+    instructor: "Maya Johnson",
+    thumbnail: dockerCourse,
+    price: 65,
+    originalPrice: 139,
+    rating: 4.6,
+    ratingCount: 4321,
+    duration: "15h",
+    studentsCount: 9876,
+    level: "Advanced" as const,
+    category: "Backend"
+  },
+  {
+    id: "22",
+    title: "Svelte & SvelteKit Modern Web Framework",
+    instructor: "Oliver Brown",
+    thumbnail: angularCourse,
+    price: 79,
+    originalPrice: 169,
+    rating: 4.7,
+    ratingCount: 6543,
+    duration: "24h",
+    studentsCount: 15432,
+    level: "Intermediate" as const,
+    category: "Frontend"
   }
 ];
 
