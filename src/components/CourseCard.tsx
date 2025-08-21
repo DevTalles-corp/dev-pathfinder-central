@@ -40,15 +40,53 @@ const CourseCard = ({
     <Link to={url} target="_blank" rel="noopener noreferrer">
       <Card className="group overflow-hidden transition-all duration-300 hover:shadow-card-hover cursor-pointer">
         <div className="relative overflow-hidden">
-          <img
-            src={thumbnail}
-            alt={title}
-            className="w-full h-48 object-cover transition-transform duration-300 group-hover:scale-105"
-          />
+          {/* 
+            Selecciona aleatoriamente un gradiente de una lista predefinida de gradientes de colores.
+            Esto da variedad visual a las tarjetas de curso.
+          */}
+          {(() => {
+            const gradients = [
+              'linear-gradient(135deg, #7f9cf5 0%, #43e97b 100%)',
+              'linear-gradient(135deg, #f7971e 0%, #ffd200 100%)',
+              'linear-gradient(135deg, #f857a6 0%, #ff5858 100%)',
+              'linear-gradient(135deg, #43cea2 0%, #185a9d 100%)',
+              'linear-gradient(135deg, #30cfd0 0%, #330867 100%)',
+              'linear-gradient(135deg, #ee9ca7 0%, #ffdde1 100%)',
+              'linear-gradient(135deg, #a1c4fd 0%, #c2e9fb 100%)',
+              'linear-gradient(135deg, #fbc2eb 0%, #a6c1ee 100%)',
+            ];
+            // Para mantener el gradiente consistente por tarjeta, se puede usar el título como semilla simple
+            function getGradientIndex(str: string, gradientsLength: number) {
+              let hash = 0;
+              for (let i = 0; i < str.length; i++) {
+                hash = str.charCodeAt(i) + ((hash << 5) - hash);
+              }
+              return Math.abs(hash) % gradientsLength;
+            }
+            const gradientIndex = getGradientIndex(title, gradients.length);
+            const selectedGradient = gradients[gradientIndex];
+            return (
+              <div
+                className="w-full h-48 transition-transform duration-300 group-hover:scale-105 flex items-center justify-center"
+                style={{
+                  background: selectedGradient,
+                }}
+              >
+                <span className="text-white text-2xl font-bold opacity-80 drop-shadow-lg text-center px-4">
+                  {title}
+                </span>
+              </div>
+            );
+          })()}
+          {/* Etiqueta de categoría, ubicada en la esquina superior izquierda */}
           <div className="absolute top-2 left-2">
             <Badge
               variant="secondary"
-              className="bg-category-bg border-category-border"
+              className="bg-white/90 border-category-border text-category-foreground  px-3 py-1 font-semibold"
+              style={{
+                backdropFilter: 'blur(2px)',
+                WebkitBackdropFilter: 'blur(2px)',
+              }}
             >
               {category}
             </Badge>
