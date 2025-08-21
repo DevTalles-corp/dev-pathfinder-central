@@ -30,7 +30,7 @@ const mockCourses = [
   },
   {
     id: "2", 
-    title: "Angular - The Complete Guide",
+    title: "Angular Enterprise Applications Mastery",
     instructor: "Michael Chen",
     thumbnail: angularCourse,
     price: 79,
@@ -44,7 +44,7 @@ const mockCourses = [
   },
   {
     id: "3",
-    title: "Node.js & Express Masterclass",
+    title: "Node.js Microservices Architecture",
     instructor: "David Rodriguez",
     thumbnail: nodejsCourse,
     price: 95,
@@ -58,7 +58,7 @@ const mockCourses = [
   },
   {
     id: "4",
-    title: "Django REST Framework Complete Course",
+    title: "Django REST API Development Pro",
     instructor: "Emily Zhang",
     thumbnail: djangoCourse,
     price: 85,
@@ -72,7 +72,7 @@ const mockCourses = [
   },
   {
     id: "5",
-    title: "TypeScript for JavaScript Developers",
+    title: "Advanced TypeScript Patterns & Design",
     instructor: "Alex Thompson",
     thumbnail: reactCourse,
     price: 69,
@@ -86,7 +86,7 @@ const mockCourses = [
   },
   {
     id: "6",
-    title: "Vue.js 3 Complete Course",
+    title: "Vue.js 3 Composition API Deep Dive",
     instructor: "Lisa Park",
     thumbnail: angularCourse,
     price: 75,
@@ -100,7 +100,7 @@ const mockCourses = [
   },
   {
     id: "7",
-    title: "NestJS Advanced Backend Development",
+    title: "GraphQL Schema Design & Performance",
     instructor: "Robert Kim",
     thumbnail: nodejsCourse,
     price: 99,
@@ -114,7 +114,7 @@ const mockCourses = [
   },
   {
     id: "8",
-    title: "Java Spring Boot Microservices",
+    title: "Spring Boot Reactive Programming",
     instructor: "Maria Garcia",
     thumbnail: javaCourse,
     price: 119,
@@ -128,7 +128,7 @@ const mockCourses = [
   },
   {
     id: "9",
-    title: "Python for Data Science & Machine Learning",
+    title: "Machine Learning with Python & TensorFlow",
     instructor: "Dr. Amanda Foster",
     thumbnail: pythonCourse,
     price: 109,
@@ -142,7 +142,7 @@ const mockCourses = [
   },
   {
     id: "10",
-    title: "Docker & Kubernetes DevOps Bootcamp",
+    title: "Kubernetes Container Orchestration",
     instructor: "Marcus Williams",
     thumbnail: dockerCourse,
     price: 129,
@@ -156,7 +156,7 @@ const mockCourses = [
   },
   {
     id: "11",
-    title: "React Native Mobile App Development",
+    title: "React Native Cross-Platform Apps",
     instructor: "Jessica Martinez",
     thumbnail: mobileCourse,
     price: 95,
@@ -170,7 +170,7 @@ const mockCourses = [
   },
   {
     id: "12",
-    title: "Full Stack Web Development with MERN",
+    title: "Next.js Full-Stack Web Applications",
     instructor: "Jason Taylor",
     thumbnail: reactCourse,
     price: 149,
@@ -184,7 +184,7 @@ const mockCourses = [
   },
   {
     id: "13",
-    title: "GraphQL with Apollo Server & Client",
+    title: "MongoDB Atlas Database Administration",
     instructor: "Nina Patel",
     thumbnail: nodejsCourse,
     price: 89,
@@ -198,7 +198,7 @@ const mockCourses = [
   },
   {
     id: "14",
-    title: "AWS Cloud Architecture Masterclass",
+    title: "AWS Solutions Architect Certification Prep",
     instructor: "Chris Anderson",
     thumbnail: dockerCourse,
     price: 139,
@@ -212,7 +212,7 @@ const mockCourses = [
   },
   {
     id: "15",
-    title: "Modern JavaScript ES6+ Complete Guide",
+    title: "Vanilla JavaScript DOM Manipulation Master",
     instructor: "Rachel Green",
     thumbnail: reactCourse,
     price: 59,
@@ -226,9 +226,9 @@ const mockCourses = [
   },
   {
     id: "16",
-    title: "MongoDB Database Administration",
+    title: "PostgreSQL Performance Tuning Expert",
     instructor: "Ahmed Hassan",
-    thumbnail: nodejsCourse,
+    thumbnail: pythonCourse,
     price: 79,
     originalPrice: 169,
     rating: 4.5,
@@ -240,7 +240,7 @@ const mockCourses = [
   },
   {
     id: "17",
-    title: "Flutter Mobile Development Bootcamp",
+    title: "Flutter Firebase Integration Bootcamp",
     instructor: "Sophie Lee",
     thumbnail: mobileCourse,
     price: 99,
@@ -254,7 +254,7 @@ const mockCourses = [
   },
   {
     id: "18",
-    title: "PHP Laravel Framework Mastery",
+    title: "Laravel E-commerce Platform Development",
     instructor: "Roberto Silva",
     thumbnail: djangoCourse,
     price: 75,
@@ -268,7 +268,7 @@ const mockCourses = [
   },
   {
     id: "19",
-    title: "C# .NET Core Web API Development",
+    title: ".NET Core Web API Security Fundamentals",
     instructor: "Anna Kowalski",
     thumbnail: javaCourse,
     price: 105,
@@ -282,9 +282,9 @@ const mockCourses = [
   },
   {
     id: "20",
-    title: "PostgreSQL Database Design & Optimization",
+    title: "Redis Caching Strategies & Implementation",
     instructor: "Samuel Davis",
-    thumbnail: pythonCourse,
+    thumbnail: dockerCourse,
     price: 69,
     originalPrice: 149,
     rating: 4.5,
@@ -296,9 +296,9 @@ const mockCourses = [
   },
   {
     id: "21",
-    title: "Redis Caching & Performance Optimization",
+    title: "Svelte & SvelteKit Modern Web Framework",
     instructor: "Maya Johnson",
-    thumbnail: dockerCourse,
+    thumbnail: angularCourse,
     price: 65,
     originalPrice: 139,
     rating: 4.6,
@@ -306,13 +306,13 @@ const mockCourses = [
     duration: "15h",
     studentsCount: 9876,
     level: "Advanced" as const,
-    category: "Backend"
+    category: "Frontend"
   },
   {
     id: "22",
-    title: "Svelte & SvelteKit Modern Web Framework",
+    title: "Elasticsearch Search Engine Optimization",
     instructor: "Oliver Brown",
-    thumbnail: angularCourse,
+    thumbnail: pythonCourse,
     price: 79,
     originalPrice: 169,
     rating: 4.7,
@@ -320,6 +320,34 @@ const mockCourses = [
     duration: "24h",
     studentsCount: 15432,
     level: "Intermediate" as const,
+    category: "Backend"
+  },
+  {
+    id: "23",
+    title: "Terraform Infrastructure as Code",
+    instructor: "Isabella Rodriguez",
+    thumbnail: dockerCourse,
+    price: 115,
+    originalPrice: 235,
+    rating: 4.8,
+    ratingCount: 3456,
+    duration: "30h",
+    studentsCount: 8901,
+    level: "Advanced" as const,
+    category: "DevOps"
+  },
+  {
+    id: "24",
+    title: "WebAssembly Performance Programming",
+    instructor: "James Mitchell",
+    thumbnail: javaCourse,
+    price: 125,
+    originalPrice: 259,
+    rating: 4.6,
+    ratingCount: 2345,
+    duration: "26h",
+    studentsCount: 5678,
+    level: "Advanced" as const,
     category: "Frontend"
   }
 ];
